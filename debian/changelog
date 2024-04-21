@@ -1,0 +1,5 @@
+powertop-openrc (0.0.1)  nitrux; urgency=medium
+
+  * Create package.
+
+ -- Uri Herrera <uri_herrera@nxos.org>  Sun, 21 Apr 2023 14:30:00 -0500
