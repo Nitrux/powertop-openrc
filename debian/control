@@ -9,7 +9,7 @@ Homepage: http://nxos.org
 
 Package: powertop-openrc
 Architecture: all
-Depends: ${shlibs:Depends}, ${misc:Depends}, openrc
+Depends: ${shlibs:Depends}, ${misc:Depends}, openrc, powertop
 Conflicts: systemd, systemd-sysv
 Description: Package to add powertop configuration for OpenRC.
  This package will add the boot scripts to use powertop
