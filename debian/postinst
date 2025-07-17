@@ -1,9 +1,3 @@
 #!/usr/bin/env bash
 
-# -- Add service to runlevel.
-
-rc-update add powertop-openrc default
-
-# -- Update services list.
-
-rc-update -u
+exit 0
