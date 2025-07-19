@@ -3,20 +3,11 @@
 description="Optimizes power settings with PowerTOP's --auto-tune"
 
 depend() {
-	# This is a system optimization that should be applied after
-	# most other services are already running.
 	after local
 }
 
 start() {
 	ebegin "Applying PowerTOP auto-tune settings"
-	# For a "one-shot" script, we call the command directly.
-	# We don't use start-stop-daemon or define 'command' at the top.
 	/usr/sbin/powertop --auto-tune
 	eend $?
-}
-
-stop() {
-	# This is a one-shot service, there is nothing to stop.
-	return 0
 }
